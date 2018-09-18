@@ -12,15 +12,15 @@
 <body>
   <div class="container">
     <!-- roblox head -->
-    <div class="head"></div>
+    <div v-bind:class="headClasses"></div>
     <!-- healthbar -->
     <div class="healthbar">
-      <div></div>
+      <div v-bind:style="{width: health + '%'}"></div>
     </div>
     <!-- game controls -->
     <div class="controls">
-      <button>Punch</button>
-      <button>Restart</button>
+      <button v-on:click="punch" v-show="!ended">Punch</button>
+      <button v-on:click="restart">Restart</button>
     </div>
   </div>
 </body>

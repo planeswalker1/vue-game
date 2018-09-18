@@ -27,6 +27,10 @@ body {
   width: 200px;
 }
 
+.rip {
+  background: none;
+}
+
 /* healthbar styles */
 .healthbar {
   border: 2px solid #000;
@@ -43,4 +47,23 @@ body {
 .controls {
   display: flex;
   justify-content: center;
+}
+
+button {
+  background-color: #ed143d;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 8px #bd1030;
+  color: #ffffff;
+  display: inline-block;
+  margin-right: 10px;
+  outline: none;
+  padding: 15px 25px;
+  position: relative;
+  text-decoration: none;
+}
+
+button:active {
+  box-shadow: 0 0px #bd1030;
+  top: 8px;
 }
